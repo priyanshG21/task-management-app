@@ -1,0 +1,5 @@
+[33mf35f471[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Added comprehensive README with setup instructions and feature documentation
+[33mb884271[m Created responsive Bootstrap UI with AJAX integration for seamless task management
+[33mc03a158[m Implemented Task CRUD API endpoints with filtering and toggle complete functionality
+[33m15f8372[m Added Task model and migration with required fields (task_name, description, is_completed, due_date)
+[33mc697e76[m Initial Laravel project setup with basic structure and configuration
