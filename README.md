@@ -23,6 +23,7 @@ A complete Task Management (To-Do List) Web Application built with Laravel, feat
 ## Installation & Setup
 
 ### Prerequisites
+
 - PHP 8.1 or higher
 - Composer
 - MySQL
@@ -31,43 +32,50 @@ A complete Task Management (To-Do List) Web Application built with Laravel, feat
 ### Installation Steps
 
 1. **Clone/Download the project**
+
    ```bash
    cd task-management-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    composer install
    ```
 
 3. **Environment Setup**
+
    - Copy `.env.example` to `.env`
    - Update database configuration in `.env`:
      ```env
      DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
-     DB_DATABASE=task_management_db
+     DB_DATABASE=task_management
      DB_USERNAME=root
      DB_PASSWORD=your_password
      ```
 
 4. **Generate Application Key**
+
    ```bash
    php artisan key:generate
    ```
 
 5. **Create Database**
+
    ```sql
-   CREATE DATABASE task_management_db;
+   CREATE DATABASE task_management;
    ```
 
 6. **Run Migrations**
+
    ```bash
    php artisan migrate
    ```
 
 7. **Start Development Server**
+
    ```bash
    php artisan serve
    ```
@@ -77,18 +85,19 @@ A complete Task Management (To-Do List) Web Application built with Laravel, feat
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/tasks` | Get all tasks |
-| POST | `/api/tasks` | Create new task |
-| GET | `/api/tasks/{id}` | Get specific task |
-| PUT | `/api/tasks/{id}` | Update task |
-| DELETE | `/api/tasks/{id}` | Delete task |
-| PATCH | `/api/tasks/{id}/toggle-complete` | Toggle task completion |
+| Method | Endpoint                          | Description            |
+| ------ | --------------------------------- | ---------------------- |
+| GET    | `/api/tasks`                      | Get all tasks          |
+| POST   | `/api/tasks`                      | Create new task        |
+| GET    | `/api/tasks/{id}`                 | Get specific task      |
+| PUT    | `/api/tasks/{id}`                 | Update task            |
+| DELETE | `/api/tasks/{id}`                 | Delete task            |
+| PATCH  | `/api/tasks/{id}/toggle-complete` | Toggle task completion |
 
 ## Database Schema
 
 ### Tasks Table
+
 - `id` - Primary key
 - `task_name` - Task title (required)
 - `description` - Task description (optional)
@@ -100,6 +109,7 @@ A complete Task Management (To-Do List) Web Application built with Laravel, feat
 ## Features Overview
 
 ### 1. Task Management
+
 - Add new tasks with name, description, and due date
 - Edit existing tasks
 - Mark tasks as complete/incomplete
@@ -107,15 +117,18 @@ A complete Task Management (To-Do List) Web Application built with Laravel, feat
 - Filter tasks by status (All, Pending, Completed)
 
 ### 2. Due Date Reminders
+
 - Tasks due within 24 hours are highlighted with red border
 - Visual indicators for urgent tasks
 
 ### 3. Responsive Design
+
 - Mobile-friendly Bootstrap 5 interface
 - Card-based layout for tasks
 - Dropdown menus for task actions
 
 ### 4. AJAX Integration
+
 - All operations performed without page reload
 - Real-time UI updates
 - Success/error notifications
