@@ -1942,3 +1942,29 @@
 #35 D:\\wamp64\\www\\task-management-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\wamp64\\\\www\\\\t...')
 #36 {main}
 "} 
+[2025-10-29 21:04:37] local.ERROR: There are no commands defined in the "log" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"log\" namespace. at D:\\wamp64\\www\\task-management-app\\vendor\\symfony\\console\\Application.php:669)
+[stacktrace]
+#0 D:\\wamp64\\www\\task-management-app\\vendor\\symfony\\console\\Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('log')
+#1 D:\\wamp64\\www\\task-management-app\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find('log:clear')
+#2 D:\\wamp64\\www\\task-management-app\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\wamp64\\www\\task-management-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\wamp64\\www\\task-management-app\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2025-10-29 21:05:14] local.INFO: TASK REMINDER {"task_id":9,"task_name":"Urgent Task","due_date":"Oct 29, 2025 at 11:05 PM","hours_until_due":1,"message":"
+
+        <h2>📋 Task Reminder</h2>
+
+        <p><strong>Task:</strong> Urgent Task</p>
+
+        <p><strong>Due:</strong> Oct 29, 2025 at 11:05 PM</p>
+
+        <p><strong>Time remaining:</strong> 1 hours</p>
+
+        <p><strong>Description:</strong> This task is due in 2 hours</p>
+
+        <p>Please complete this task before the due date.</p>
+
+        <p>Best regards,<br>Task Management System</p>
+
+        "} 
