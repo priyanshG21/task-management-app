@@ -57,7 +57,7 @@
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .card:hover {
@@ -106,7 +106,7 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             border-radius: 12px;
             border: none;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .task-card:hover {
@@ -227,6 +227,7 @@
             border-radius: 8px;
             border: none;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 2000;
         }
 
         .dropdown-item {
